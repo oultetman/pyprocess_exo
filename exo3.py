@@ -8,6 +8,7 @@ coordonnees = [300, 150]
 def setup():
     createCanvas(600, 200)
     noStroke()
+    ellipseMode("center")
 
 
 def draw():

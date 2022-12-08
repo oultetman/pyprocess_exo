@@ -28,7 +28,7 @@ def draw_damier():
                 fill("brown")
                 blanc = not blanc
                 i=f
-            rect(dx + (x * largeur_case), dy + (y * largeur_case), largeur_case, largeur_case,image=i,allign="center")
+            rect(dx + (x * largeur_case), dy + (y * largeur_case), largeur_case, largeur_case)
         blanc = not blanc
 
 
@@ -96,6 +96,7 @@ def setup():
     title("Jeu de dame")
     background("grey")
     init_damier()
+    ellipseMode("center")
 
 def draw_joueur():
     if joueur == 0:
